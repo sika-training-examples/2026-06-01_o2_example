@@ -8,6 +8,9 @@ up:
 up-build:
 	docker compose up -d --build --remove-orphans
 
+up-prod:
+	docker compose up -d --no-build --remove-orphans
+
 down:
 	docker compose down --remove-orphans
 
