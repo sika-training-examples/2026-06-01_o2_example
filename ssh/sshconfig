@@ -1,0 +1,17 @@
+Host o2-*
+  User root
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+  ForwardAgent yes
+
+Host o2-docker
+  HostName docker.sikademo.com
+
+Host o2-build
+  HostName build.sikademo.com
+
+Host o2-vm
+  HostName vm.sikademo.com
+
+Host o2-vm2
+  HostName vm2.sikademo.com
