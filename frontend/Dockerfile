@@ -1,4 +1,4 @@
-FROM node:24-trixie-slim as build
+FROM node:24-trixie-slim AS build
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN --mount=type=cache,target=/root/.yarn \
