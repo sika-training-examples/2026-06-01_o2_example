@@ -14,7 +14,7 @@ services:
   frontend:
     build: ./frontend
     platform: linux/amd64
-    image: ${FRONTEND_IMAGE:-ttl.sh/o2/frontend}:${FRONTEND_TAG?}
+    image: ${FRONTEND_IMAGE:-ttl.sh/o2/frontend}:${FRONTEND_TAG:-v1}
     environment:
       API_ORIGIN: http://backend:8000
     ports:
