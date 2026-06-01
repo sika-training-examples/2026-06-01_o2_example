@@ -6,13 +6,15 @@ services:
 
   backend:
     build: ./backend
-    image: ${BACKEND_IMAGE:-ttl.sh/o2/backend}
+    platform: linux/amd64
+    image: ${BACKEND_IMAGE:-ttl.sh/o2/backend}:${BACKEND_TAG?}
     environment:
       REDIS: redis
 
   frontend:
     build: ./frontend
-    image: ${FRONETEND_IMAGE:-ttl.sh/o2/frontend}
+    platform: linux/amd64
+    image: ${FRONTEND_IMAGE:-ttl.sh/o2/frontend}:${FRONTEND_TAG?}
     environment:
       API_ORIGIN: http://backend:8000
     ports:
