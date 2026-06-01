@@ -41,7 +41,7 @@ export default function Index(props) {
           textAlign: "center",
         }}
       >
-        <H1>👋 {props.extraText} v4</H1>
+        <H1>👋 {props.extraText} v5</H1>
         <H1>{props.counter}</H1>
         {props.hostnameApi === props.HOSTNAME ? (
           <>
