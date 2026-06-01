@@ -19,6 +19,9 @@
 *.local.txt
 *.local.md
 Makefile.local.mk
+.env
+.env.*
+!.env.EXAMPLE
 
 # JS
 node_modules
