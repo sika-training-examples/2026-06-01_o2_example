@@ -7,7 +7,7 @@ services:
   backend:
     build: ./backend
     platform: linux/amd64
-    image: ${BACKEND_IMAGE:-ttl.sh/o2/backend}:${BACKEND_TAG?}
+    image: ${BACKEND_IMAGE:-ttl.sh/o2/backend}:${BACKEND_TAG:-v2}
     environment:
       REDIS: redis
 
