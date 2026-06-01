@@ -7,14 +7,14 @@ services:
   backend:
     build: ./backend
     platform: linux/amd64
-    image: ${BACKEND_IMAGE:-ttl.sh/o2/backend}:${BACKEND_TAG:-v2}
+    image: ${BACKEND_IMAGE:-ttl.sh/o2/backend}:${BACKEND_TAG:-v4}
     environment:
       REDIS: redis
 
   frontend:
     build: ./frontend
     platform: linux/amd64
-    image: ${FRONTEND_IMAGE:-ttl.sh/o2/frontend}:${FRONTEND_TAG:-v1}
+    image: ${FRONTEND_IMAGE:-ttl.sh/o2/frontend}:${FRONTEND_TAG:-v4}
     environment:
       API_ORIGIN: http://backend:8000
     ports:
