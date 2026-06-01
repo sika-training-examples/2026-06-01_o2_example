@@ -10,6 +10,6 @@ import (
 func main() {
 	os.Setenv("EXTRA_TEXT", "Hello O2")
 	os.Setenv("API_ONLY", "1")
-	version.Version = "o2-v2"
+	version.Version = "o2-v3"
 	server.Server(server.ServerOptions{})
 }
