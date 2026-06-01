@@ -4,6 +4,12 @@ Host o2-*
   UserKnownHostsFile=/dev/null
   ForwardAgent yes
 
+Host o2-* !o2-jump
+  ProxyJump o2-jump
+
+Host o2-jump
+  HostName jump.sikademo.com
+
 Host o2-docker
   HostName docker.sikademo.com
 
