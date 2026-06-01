@@ -9,7 +9,6 @@ RUN --mount=type=cache,target=/app/.next/cache \
 
 FROM gcr.io/distroless/nodejs24-debian13
 WORKDIR /app
-COPY --from=build /app/package.json /app/package.json
 COPY --from=build /app/node_modules /app/node_modules
 COPY --from=build /app/.next /app/.next
 ENV NODE_ENV=production
